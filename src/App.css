@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+.inner {
+  width: 1024px;
+  margin: 0% auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*NAV BAR*/
+.nav {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: grid;
+  box-shadow: 0px 0px 4px rgb(223, 222, 222);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 108px;
+  height: 108px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-end: 3;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav-coockie {
+  background-color: rgb(252, 198, 77);
+  padding: 20px 0 20px 0;
+  display: flex;
+}
+
+.nav-coockie-message {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  box-shadow: 0px 0px 0px 0.08px rgb(255, 255, 255);
+}
+
+.coockie-btn {
+  font-size: 16px;
+  background-color: rgb(0, 0, 0);
   color: white;
+  padding: 13px 25px 13px 25px;
+  border: 10px white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-coockie span {
+  text-decoration: underline;
+  color: blue;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.extra {
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extra-links {
+  display: flex;
+  text-align: start;
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.extra-links li {
+  text-align: start;
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+
+.search {
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+form i {
+  color: rgb(110, 110, 115);
+}
+
+form input {
+  width: 40px;
+  padding: 0px 0px 0px 5px;
+  border: 0;
+  color: black;
+}
+
+.location i {
+  color: red;
+  font-size: 19px;
+}
+
+.location span {
+  text-decoration: underline;
+  font-size: 12px;
+  color: blue;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding-left: 6px;
+}
+
+.nav-links li {
+  list-style: none;
+  font-weight: 300;
+}
+
+.nav-links li:nth-child(1) {
+  font-weight: 500;
 }
